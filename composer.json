@@ -20,5 +20,6 @@
         "psr-4": {
             "Supervisor\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
