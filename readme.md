@@ -11,7 +11,7 @@ It's a PHP XML RPC Client for supervisor.
 
 ## Usage
 ```php
-$client = new \Rockxsj\Supervisor('http://rpc-host/RPC2', 'username', 'password');
+$client = new \Rockxsj\Supervisor('http://127.0.0.1:9001/RPC2', 'username', 'password');
 $processInfos = $client->getAllProcessInfo();
 ```
 
