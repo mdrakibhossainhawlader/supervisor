@@ -1,0 +1,24 @@
+{
+    "name": "rockxsj/supervisor",
+    "description": "A PHP Lib for supervisor.",
+    "keywords": [
+        "supervisor", "laravel", "xmlrpc"
+    ],
+    "type": "library",
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "zendframework/zend-xmlrpc": "^2.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rockxsj",
+            "email": "rockxsj@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Supervisor\\": "src/"
+        }
+    }
+}
