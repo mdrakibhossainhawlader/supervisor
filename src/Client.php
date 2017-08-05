@@ -102,11 +102,12 @@ class Client
     ];
 
     /**
-     * @param string $uri
-     * @param string $username
-     * @param string $password
+     * @param string $uri The xml-rpc server of supervisor
+     * @param string $username The username of supervisor
+     * @param string $password The password of supervisor
+     * @param null | array $httpOptions  The options of Zend\Http\Client
      */
-    public function __construct($uri, $username = '', $password = '')
+    public function __construct($uri, $username = '', $password = '', $httpOptions = ['timeout' => 60])
     {
         $httpClient = new HttpClient();
         if (!empty($username)) {
