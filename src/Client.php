@@ -109,7 +109,7 @@ class Client
      */
     public function __construct($uri, $username = '', $password = '', $httpOptions = ['timeout' => 60])
     {
-        $httpClient = new HttpClient();
+        $httpClient = new HttpClient(null, $httpOptions);
         if (!empty($username)) {
             $httpClient->setAuth($username, $password);
         }
